@@ -1,0 +1,1 @@
+runas.exe /noprofile /user:.\fmtadmin "C:\Windows\system32\mmc.exe eventvwr.msc /s"

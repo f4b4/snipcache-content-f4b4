@@ -1,0 +1,8 @@
+create list of files:
+
+dir /b/on > files.txt
+
+
+copy files:
+
+copy /y FILE_NAME TARGET_DIR

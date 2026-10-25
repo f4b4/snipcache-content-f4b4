@@ -1,0 +1,59 @@
+Kopiert Dateien und Verzeichnisstrukturen.
+
+XCOPY Quelle [Ziel]        [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T] [/U]
+                           [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:Datei1[+Datei2][+Datei3]...]
+
+  Quelle    Die zu kopierenden Dateien.
+  Ziel      Position und/oder Name der neuen Dateien.
+  /A        Kopiert nur Dateien mit gesetztem Archivattribut,
+            ändert das Attribut nicht.
+  /M        Kopiert nur Dateien mit gesetztem Archivattribut,
+            setzt das Attribut nach dem Kopieren zurück.
+  /D:M-T-J  Kopiert nur die an oder nach dem Datum geänderten Dateien.
+            Ist kein Datum angegeben, werden nur Dateien kopiert,
+            die neuer als die bestehenden Zieldateien sind.
+  /EXCLUDE:Datei1[+Datei2][+Datei3]...
+            Gibt eine Liste von Zeichenfolgen an. Jede Zeichenfolge
+            sollte in einer einzelnen Zeile in der Datei angezeigt werden.
+            Wenn eine der Zeichenfolgen Teil des absoluten Verzeichnispfads
+            der zu kopierenden Datei ist, wird diese Datei vom
+            Kopiervorgang ausgeschlossen. Beispiel: Bei der
+            Zeichenfolge \obj\ oder .obj werden alle Dateien
+            unterhalb des Verzeichnisses OBJ bzw. alle Dateien mit
+            der Erweiterung .obj vom Kopiervorgang ausgeschlossen.
+  /P        Fordert vor dem Erstellen jeder Zieldatei eine Bestätigung.
+  /S        Kopiert Verzeichnisse und Unterverzeichnisse, die nicht leer sind.
+  /E        Kopiert alle Unterverzeichnisse (leer oder nicht leer).
+            Wie /S /E. Mit dieser Option kann die Option /T geändert werden.
+  /V        Überprüft die Größe jeder neuen Datei.
+  /W        Fordert vor dem Beginn des Kopierens zu einem Tastendruck auf.
+  /C        Setzt das Kopieren fort, auch wenn Fehler auftreten.
+  /I        Falls das Ziel nicht vorhanden ist und mehrere Dateien kopiert
+            werden, nimmt XCOPY an, dass das Ziel ein Verzeichnis ist.
+  /Q        Zeigt beim Kopieren keine Dateinamen an.
+  /F        Zeigt die Namen der Quell- und Zieldateien beim Kopieren an.
+  /L        Listet die Dateien auf, die ggf. kopiert werden.
+  /G        Ermöglicht das Kopieren von verschlüsselten Dateien an ein
+            Ziel, an dem Verschlüsselung nicht unterstützt wird.
+  /H        Kopiert auch Dateien mit den Attributen "Versteckt" und "System".
+  /R        Überschreibt schreibgeschützte Dateien.
+  /T        Erstellt die Verzeichnisstruktur, kopiert aber keine Dateien.
+            Leere Verzeichnisse oder Unterverzeichnisse werden nicht kopiert.
+            Um auch diese zu kopieren, müssen Sie die Optionen /T /E angeben.
+  /U        Kopiert nur Dateien, die im Zielverzeichnis vorhanden sind.
+  /K        Kopiert Attribute. Standardmäßig wird "Schreibgeschützt" gelöscht.
+  /N        Beim Kopieren werden die erstellten Kurznamen verwendet.
+  /O        Kopiert Informationen über den Besitzer und die ACL.
+  /X        Kopiert Dateiüberwachungseinstellungen (bedingt /O).
+  /Y        Unterdrückt die Aufforderung zur Bestätigung, dass eine
+            vorhandene Zieldatei überschrieben werden soll.
+  /-Y       Fordert zur Bestätigung auf, dass eine bestehende
+            Zieldatei überschrieben werden soll.
+  /Z        Kopiert Dateien in einem Modus, der einen Neustart ermöglicht.
+  /B        Kopiert den symbolischen Link anstelle des Ziels des Links.
+  /J        Kopiert ohne E/A-Puffer. Für große Dateien empfohlen.
+
+Die Option "/Y" kann in der Umgebungsvariable COPYCMD vordefiniert sein.
+Sie kann mit "/-Y" in der Befehlszeile deaktiviert werden.

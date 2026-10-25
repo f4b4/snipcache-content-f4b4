@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+; Created by: Shawn Brink
+; http://www.sevenforums.com
+; Tutorial: http://www.sevenforums.com/tutorials/13619-zip-folders-enable-disable-windows-explorer-view.html
+
+
+[-HKEY_CLASSES_ROOT\CompressedFolder\CLSID]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.zip\CLSID]
+
+
