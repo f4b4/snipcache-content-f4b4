@@ -1,6 +1,6 @@
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' BereinigenDotNet
-' Copyright (c) 2007, Christoph Borchard
+' Copyright (c) 2007, authors
 ' 14.07.2007 17:01
 
 ' This program is free software;  you can redistribute it and/or modify it
