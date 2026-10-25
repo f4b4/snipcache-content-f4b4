@@ -1,0 +1,28 @@
+name: Deploy SnipCache
+
+# Builds this repo's snippets into a searchable site and publishes it to
+# GitHub Pages on every push. One-time setup: Settings → Pages → Source →
+# "GitHub Actions". The build itself lives in f4b4/snipcache.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    uses: f4b4/snipcache/.github/workflows/build-site.yml@main
+    with:
+      site_title: SnipCache
+      # Origin of your SnipCache editor; adds "Edit" links to every page.
+      editor_url: ''
+      builder_ref: main
