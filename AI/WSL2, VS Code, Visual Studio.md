@@ -1,4 +1,4 @@
-# Coding with WSL2, VS Code and Visual Studio
+# Coding with WSL2, VS Code and Visual Studiox
 
 **Q**: How to use VS Code on Win11 with WSL2 and Ubuntu 24.04 for ai-assited programming of asp.net 10 projects?
 Give me a detailed overview, where to install which product.
